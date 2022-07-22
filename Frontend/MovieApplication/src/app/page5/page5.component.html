@@ -1,0 +1,41 @@
+<div class="body">
+    <div class="content">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search for movies" [(ngModel)]="search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+<button mat-icon-button><mat-icon id="search">search</mat-icon></button>
+      </div>
+      <hr>
+         <mat-card class="example-card" *ngFor="let m of recent|filter:search">
+        <img mat-card-image src="{{imgUrl+m.poster_path}}">
+        <div id="btn"><button id="b1"  (click)="addfav(m)"><mat-icon id="fav"
+            matTooltipPosition="above"  matTooltip="Add to favourite"  >favorite</mat-icon></button></div>
+        <div class="myDiv">
+          <mat-icon id="dd">expand_circle_down</mat-icon>
+          </div> 
+        <mat-card class="hide">
+       <h2>{{m.title}}</h2>
+        <h3>{{m.release_date}}</h3>
+        </mat-card>
+      </mat-card>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="./home">1</a></li>
+          <li class="page-item"><a class="page-link" href="./page2">2</a></li>
+          <li class="page-item"><a class="page-link" href="./page3">3</a></li>
+          <li class="page-item"><a class="page-link" href="./page4">4</a></li>
+          <li class="page-item"><a class="page-link" href="./page5">5</a></li>
+
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      </div>

@@ -1,0 +1,68 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'side' : 'over'"
+      [opened]="(isHandset$ | async) === true">
+    <mat-toolbar id="db"><mat-icon id="ic" >dashboard</mat-icon>Dashboard</mat-toolbar>
+    <hr style="border-style:dotted">
+    <mat-nav-list>
+     <!--<a id="nav" mat-list-item href="./home"><mat-icon id="ic">home</mat-icon>Home</a>-->
+     <a id="nav" mat-list-item href="./favourite-movies"><mat-icon id="ic">favorite</mat-icon>Favourites</a>
+    <a id="nav" mat-list-item href="./recommended-movies"><mat-icon id="ic">movie_filter</mat-icon>Recommended</a>
+  
+      <hr>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button id="b1" type="button" aria-label="Toggle sidenav" mat-icon-button
+        (click)="drawer.toggle()">
+       <mat-icon matTooltipPosition="below"  matTooltip="Dashboard" id="dash"  aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <img src="/assets/l7.png" height="60px" width="60px" style="image-rendering:optimizeQuality;"  alt="">
+      <span >MOVIE FLIX</span>
+
+       <!-- <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search for movies" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>-->
+    
+
+       
+        <!--<button id="b2" matTooltipClass="search" data-toggle="tooltip" title="Search"  mat-icon-button><mat-icon id="srch">search</mat-icon></button>-->
+       <div class="sl">
+        <button id="b3" *ngIf="isVisible"   (click)="signup()"  mat-raised-button>Sign Up</button>
+        <button id="b4" *ngIf="isVisible"   (click)="login()"  mat-raised-button>Login</button>
+</div>
+
+<mat-icon id="home" (click)="home()" [style.margin-left]="margin"  matTooltipPosition="below"  matTooltip="Home">home</mat-icon>
+<button id="b5"    mat-button [matMenuTriggerFor]="menu" matTooltipPosition="below"  matTooltip="My Profile"><img (click)="userAccess()" src="/assets/l10.png" height="50px"  alt=""></button>
+<mat-menu #menu="matMenu">
+  <button id="b7" mat-menu-item (click)="profile()">
+    <h3>{{user}}<!--<mat-icon id="cc">check_circle</mat-icon>--></h3>
+  </button>
+
+  <button *ngIf="visible"  class="btn btn-primary" id="logout" mat-raised-button (click)="logout()">
+    Log Out
+  </button>
+</mat-menu>
+    </mat-toolbar>
+
+
+   
+   
+<a routerLink="/signup"></a>
+<a routerLink="/login"></a>
+<a routerLink="/home"></a>
+<a routerLink="/profile"></a>
+<a routerLink="/favourite-movies"></a>
+<a routerLink="/recommended-movies"></a>
+<a routerLink="/page2"></a>
+
+
+  <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+

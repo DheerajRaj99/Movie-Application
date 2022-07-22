@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="container">
+    
+    <mat-card>
+    <h1>My Profile</h1>
+    
+    </mat-card>
+    
+   <!-- <button
+    class="btn btn-primary" id="up"
+    type="button"
+    mat-raised-button
+    (click)="fileInput.click()"
+  >
+    Upload Picture
+  </button>
+  <input hidden (change)="onFileSelected($event)" #fileInput type="file" />
+    <br>-->
+    
+    <div class="pp">
+      <img src="/assets/l10.png"  alt="" />
+     <img [src]="url" *ngIf="url"  alt="" />
+
+    </div>
+    <div class="info" *ngFor="let user of userInfo">
+      <h2>Name</h2>
+      <mat-card id="mc">{{ user.firstName }} {{ user.lastName }}</mat-card>
+      <h2>Email</h2>
+      <mat-card id="mc">{{ user.email }}</mat-card>
+      <h2>Country</h2>
+      <mat-card id="mc">India</mat-card>
+      
+
+    </div>
+  </div>
+

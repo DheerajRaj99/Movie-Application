@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fira+Sans:ital,wght@1,500&family=Koulen&family=Lobster&family=Oleo+Script+Swash+Caps&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Roboto&display=swap');
+.body{
+    /*background-color: rgb(236, 239, 245);*/
+    background-image: url("/assets/bbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+        height: 100%;
+}
+#mc{
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(243, 243, 250);
+    background-color: rgb(91, 105, 134);
+    width: 300px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 410px;
+}
+
+h2{
+    padding-top: 5px;
+    padding-bottom: -15px;
+    font-family: 'Fjalla One', sans-serif;
+}
+#up{
+    margin-left:10.70in ;
+}
+
+.bg{
+    height: 560px;
+    background-image: linear-gradient(rgb(160, 191, 206),rgb(150, 163, 187));
+border-radius: 50px;
+width: max-content;
+height: max-content;
+margin-left: 0px;
+padding-bottom: 20px;
+}
+h1{
+    padding-top: -15px;
+    text-align: center;
+    font-family: 'Oswald';
+    color: rgb(15, 85, 85);
+    font-size: 35px;
+
+    
+
+}
+img{
+   width:200px;
+   height: 200px;
+padding-top: -5px;
+border-radius: 50%;
+    image-rendering: auto;
+    margin-left: 460px;
+}
+.pp{
+    padding-top: -7px;
+
+}
+.info{
+    margin-top: -10px;
+}
+.btn{
+    
+    background-color: rgb(218, 24, 24);
+}
+.pp{
+    
+}
+input{
+    width:2.5in;
+    margin-left: 10px;
+}
+label{
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.card{
+    margin-top: -20px;
+    width: 400px;
+    height: 390px;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .card{
+      margin-left: -700px;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    #b1{
+        margin-top: -20px;
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    #lo{
+        margin-top: 10px;
+        margin-left: 510px;
+    }
+    h2{
+        margin-left: 415px;
+    }

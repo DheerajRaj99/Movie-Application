@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@1,500&family=Koulen&family=Lobster&family=Oleo+Script+Swash+Caps&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto:wght@500&family=Teko&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Oswald:wght@500&family=Roboto:wght@500&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+
+
+.sidenav-container {
+  height: 100%;
+ /* background-color: rgb(233, 223, 223);*/
+ 
+
+}
+mat-nav-list a{
+  color: white;
+}
+.sidenav {
+  width: 200px;
+  background-color: rgb(63, 61, 61);
+}
+
+.sidenav .mat-toolbar {
+  background:inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#text{
+ padding-top: 10px;
+ line-height: 18px;
+ color: white;
+}
+hr{
+  height: 2px;
+  background-color: grey;
+  border: grey;
+}
+#b1,#b5{
+  border: none;
+  background-color:rgb(25, 44, 70);
+  color: white;
+}
+#b5{
+}
+.mat-toolbar{
+  border: none;
+  background-color: rgb(25, 44, 70);
+  height: 70px;
+}
+
+#db{
+  color: rgb(207, 221, 221);
+  font-size: 30px;
+  font-family: 'Oswald';
+
+}
+mat-label{
+  color: white;
+  font-size: 15px;
+}
+mat-form-field{
+margin-left: 100px;
+color: rgb(204, 209, 207);
+width: 3in;
+}
+span{
+  padding-top: 10px;
+  margin-left: 20px;
+  font-size: 38px;
+  /*font-family: 'Teko', sans-serif;*/
+  font-family: 'Fjalla One', sans-serif;
+  color: rgb(243, 238, 233);
+  text-shadow: 2px 5px 7px rgb(17, 17, 17);
+}
+#dash{
+  font-size: 30px;
+}
+#b3{
+  margin-right: 20px;
+}
+#b3,#b4{
+  font-size: 15px;
+  background-color:transparent;
+  border-radius: 10px;
+  color: rgb(186, 231, 229);
+  border:2px solid;
+  border-color: rgb(239, 243, 242);
+  height: 40px;
+}
+#ic{
+  margin-right: 10px;
+  font-size: 25px;
+}
+#b2{
+color: white;
+}
+#srch{
+  font-size: 28px;
+}
+#nav{
+  color:rgb(167, 200, 243);
+  font-size: 18px;
+}
+#user
+{
+  font-size: 35px;
+  margin-top: -10px;
+  color: rgb(112, 177, 189);
+  position: fixed;
+
+
+}
+#home{
+  font-size: 40px;
+  color: rgb(144, 169, 185);
+  margin-right: 15px;
+  margin-top: -10px;
+  margin-left: 15px;
+  position:relative;
+  
+
+}
+#b3:hover{
+  background-color:  rgb(187, 240, 228);
+  color:black;
+}
+#b4:hover{
+  background-color: rgb(198, 238, 229);
+
+  color:black;
+}
+#home:hover{
+  color: rgb(198, 238, 229);
+  cursor: pointer;
+
+
+}
+#user:hover{
+  color: rgb(198, 238, 229);
+
+}
+#b7{
+  color: black;
+  padding-top: 10px;
+}
+
+img{
+  margin-left: 10px;
+  margin-right: -5px;
+  image-rendering: auto;
+  position: relative;
+}
+h3,#cc{
+  color: green;
+}
+#cc{
+  margin-left: 4px;
+  padding-top: -8px;
+  margin-top: -3px;
+}
+#rm,#fm{
+  background-color: transparent;
+}
+html,body{
+  overflow-x: hidden;
+}
+#logout{
+  margin-left: 15px;
+}
+.sl{
+margin-left: 700px;
+}
+

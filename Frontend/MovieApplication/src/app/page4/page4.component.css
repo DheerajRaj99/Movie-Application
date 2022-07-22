@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto:wght@500&display=swap');
+
+.example-card{
+    background-color: rgb(248, 242, 242);
+    width:200px;
+    display:inline-flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.body{
+    height: 250%;
+    background-image: url("/assets/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*background-color: rgb(53, 56, 56);*/
+}
+img{
+    width: 200px;
+    height: 290px;
+    
+}
+.hide {
+    display: none;
+    
+
+  }
+
+      
+  .myDiv:hover + .hide {
+     /* display: block;*/
+     display: block;
+    color: rgb(30, 31, 94);
+    margin-top: 15px;
+  }
+mat-icon{
+    margin-left:70px ;
+    color: rgb(49, 90, 128)
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 40px;
+    padding-top: 10px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: rgb(5, 5, 5);
+
+}
+p:hover{
+    font-size: 30px;
+}
+h2,h3{
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+h2{
+    font-weight: bold;
+}
+h3{
+    color: rgb(207, 32, 47);
+    margin-top: -15px;
+    font-weight: bold;
+}
+a{
+    text-decoration-line: none;
+    color: rgb(243, 237, 237);
+    font-size: 16px;
+}
+hr{
+    border:1px solid rgb(88, 88, 88);
+}
+#c1{
+    margin-left: 20px;
+}
+#fav{
+    margin-left: -8px;
+    padding-left: 3px;
+}
+#b1{
+    border: none;
+    margin-left: 40px;
+    height: 25px;
+    border-radius:5px;
+    background-color: transparent;
+    
+}
+.myDiv > #dd:hover + #b1{
+    display: none;
+}
+.myDiv:hover{
+    display: none;
+}
+#fav{
+    color:white;
+}
+#fav:hover{
+    color: red;
+}
+#btn{
+    margin-top: -300px;
+    margin-left: 110px;
+}
+.myDiv{
+    margin-top: 260px;
+}
+.input-group{
+    width: 3in;
+    margin-left: 10.7in;
+    padding-top: 17px;
+  }
+  #search{
+      margin-top: 8px;
+      color: white;
+  }
+  button{
+      border :2px solid;
+     /* background-color: azure;*/
+     border-left: 20px;
+     border-color: rgb(10, 10, 10);
+
+     background-color: transparent;
+
+  }
+  #search{
+      margin-left: -6px;
+      color: rgb(255, 250, 250);
+      margin-top: -3px;
+  }
+  input{
+    border-radius: 20px;
+    background-color: transparent;
+    border:2px solid;
+    border-color: rgb(12, 12, 12);
+    border-right: 20px;
+  }
+  .page-link{
+    color: rgb(245, 233, 233);
+    background-color: rgb(33, 105, 128);
+}
+nav{
+    margin-left: 5.75in;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}

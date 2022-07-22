@@ -1,0 +1,138 @@
+
+
+
+<div class="body">
+  <div class="container"> 
+    <div id="head">SIGN UP</div>
+    <!--<hr style="border: 2px solid rgb(20, 1, 5);">-->
+<br>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="form-group">
+            <div class="form-floating mb-3">
+          <input type="text" class="form-control" formControlName="firstName"  id="firstName" placeholder="First Name">
+          <label for="floatingInput">First Name</label>
+        </div>
+        <div  *ngIf="form.controls['firstName'].touched">
+          <div class="alert alert-danger" *ngIf="firstName.errors?.['required']">
+         <p>First name is required</p>
+        </div>
+      </div>
+        </div>
+        
+          
+          <div class="form-group">
+            <div class="form-floating mb-3">
+          <input type="text" class="form-control" formControlName="lastName" id="lastName" placeholder="Last Name">
+          <label for="floatingInput">Last Name</label>
+        </div>
+        <div  *ngIf="form.controls['lastName'].touched">
+          <div class="alert alert-danger" *ngIf="lastName.errors?.['required']">
+         <p>Last name is required</p>
+        </div>
+      </div>
+          </div>
+
+          <div class="form-group">
+           <div class="form-floating mb-3">
+          <input type="text" class="form-control" formControlName="username" id="username" placeholder="User Name">
+          <label for="floatingInput">User Name</label>
+         </div>
+         <div *ngIf="form.controls['username'].touched">
+          <div class="alert alert-danger"  *ngIf="username.errors?.['required']">
+         <p>Username is required</p>
+        </div>
+        <div class="alert alert-danger"  *ngIf="username.errors?.['minlength']">
+          <p>Username must be atleast 7 characters</p>
+         </div>
+      </div>
+         </div>
+
+          <div class="form-group">
+           <div class="form-floating mb-3">
+            <input type="email" class="form-control" formControlName="email" id="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div *ngIf="form.controls['email'].touched">
+            <div class="alert alert-danger" *ngIf="email.errors?.['required']">
+           <p>Email is required</p>
+          </div>
+          <div class="alert alert-danger"  *ngIf="email.errors?.['email']">
+            <p>Enter a valid email</p>
+           </div>
+        </div>
+          </div>
+
+          <div class="form-group">
+          <div class="form-floating">
+            <input type="password" class="form-control" formControlName="password"  id="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div *ngIf="form.controls['password'].touched">
+            <div class="alert alert-danger" *ngIf="password.errors?.['required']">
+           <p>Password is required</p>
+          </div>
+          <div class="alert alert-danger" *ngIf="password.errors?.['maxlength']">
+            <p>Password must be atleast 8 characters</p>
+           </div>
+           
+        </div>
+          </div>
+         
+            
+          <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Sign Up</button>
+      
+          <div id="redirect">Already Registered?<a href="./login" style="color: rgb(49, 6, 245);"> Login</a></div>
+      </form>
+</div>
+</div>
+
+
+        
+        
+
+
+
+
+
+
+
+<!-- <div class="body">
+  <div class="container">
+    <form>
+
+<div class="form-group">
+<mat-form-field appearance="outline">
+  <mat-label>First Name</mat-label>
+  <input matInput >
+</mat-form-field>
+</div>
+<div class="form-group">
+  <mat-form-field appearance="outline">
+    <mat-label>Last Name</mat-label>
+    <input matInput >
+  </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field appearance="outline">
+      <mat-label>User Name</mat-label>
+      <input matInput >
+    </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput >
+      </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" >
+        </mat-form-field>
+        </div>
+</form>
+</div>
+</div> -->
+
+
+

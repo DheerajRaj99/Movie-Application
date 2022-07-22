@@ -1,0 +1,64 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+
+.container{
+    padding-top: 10px;
+    width: 400px;
+    margin-top: 20px;
+    /*background-image: linear-gradient(rgb(168, 160, 197),rgb(223, 162, 207));*/
+/*background-image:linear-gradient(rgb(209, 230, 241),rgb(182, 156, 187));*/
+background-color:rgb(101, 129, 141);
+
+
+    border-radius: 10px;
+    height: max-content;
+    box-shadow: 10px 10px 10px;
+    transition: transform .4s;
+}
+.container:hover{
+    transform: scale(1.11);
+
+}
+
+.body{
+    padding-top: 20px;
+    padding-bottom: 400px;
+  /*  background-image: linear-gradient(rgb(212, 246, 250),rgb(127, 199, 247));*/
+background-image: url("/assets/bbg.jpg");
+  /*background-color: rgb(207, 204, 206);*/
+  /*background-image: linear-gradient(rgb(188, 202, 204),rgb(182, 165, 189));*/
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+button{
+    margin-left: 140px;
+    margin-bottom: 15px;
+    width: 100px;    
+}
+#head{
+    border: 1px ;
+    height: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(248, 242, 248);
+    background-color: black;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+label{
+    font-weight: 400;
+    font-size: 16px;
+}
+.alert{
+    height: 40px;
+}
+p{
+    margin-top: -5px;
+}
+input{
+    
+}
